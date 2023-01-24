@@ -1,5 +1,4 @@
-import ballerina/io;
+import ballerinax/trigger.asgardeo;
 
-public function main() {
-    io:println("Hello, World!");
-}
+listener asgardeo:Listener asgardeoListener 
+= new(listenerConfig = {clientId: "", clientSecret: "", organization: "", tokenEndpointHost: "", callbackURL: "", hubURL: ""}, listenOn = 8090);
