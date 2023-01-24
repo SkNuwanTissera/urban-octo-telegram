@@ -1,4 +1,4 @@
-import ballerinax/trigger.asgardeo;
+import nuwantissera/trigger.asgardeo;
 import ballerina/io;
 
 configurable string clientId = ?;
